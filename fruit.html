@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apna Grocery store</title>
+    <style>
+        .container {
+            display: grid;
+            /* border: 2px solid black; */
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            height: 100vh;
+            width: 100%;
+            
+
+        }
+        body{
+            background-color: #FFFDCB; ;
+        }
+
+        .header {
+            /* border: 2px solid red; */
+            grid-column-start: 1;
+            grid-column-end: 4;
+            height: 10vh;
+            text-align: center;
+            background-attachment: fixed;
+            background-color: #E178C5;
+        }
+
+        .sidebar {
+            /* border: 2px solid red; */
+            grid-row: 2/4;
+            height: 80vh;
+            width: 50vh;
+            background-attachment: fixed;
+            background-color: #FFB38E;
+        }
+
+        h2 {
+            background-color: #FF8E8F;
+            margin-top: 0%;
+            height: 8vh;
+        
+        }
+
+        ul {
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            overflow: hidden;
+            
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        li {
+            float: center;
+
+        }
+
+        li a {
+            display: block; 
+            color: rgb(69, 6, 6);
+            text-align: center;
+             padding: 10px;
+            text-decoration: none;
+            line-height: 4;
+            font-size: 18px;
+        }
+
+        li a:hover {
+            background-color: #fdc5a9;
+            
+        }
+
+        .content1 {
+            /* border: 2px solid red; */
+            grid-column: 2/4;
+            background-attachment: fixed;
+            background-color: #FFFDCB;
+            margin: 5px;
+            
+            
+        }
+        
+        .content2 {
+            /* border: 2px solid red; */
+            background-attachment: fixed;
+            /* background-image:url('veggie1.jpg') ; */
+            margin: 30px;
+            background-color: #FFFDCB;
+
+        }
+
+        .content3 {
+            /* border: 2px solid red; */
+            background-attachment: fixed;
+            /* background-image: url('veggie2.jpg'); */
+            margin: 30px;
+            background-color: #FFFDCB;
+        }
+        #img{
+            background-size: cover;
+        }
+
+        .footer {
+            /* border: 2px solid red; */
+            grid-column: 1/4;
+            line-height: 3vh;
+            background-attachment: fixed;
+            background-color: #FFFDCB;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Apna Grocery store</h1>
+        </div>
+        <div class="sidebar">
+            <h2>Our products</h2>
+
+            <ul>
+                <li><a href="index.html">Vegetables</a></li>
+                <li><a href="fruit.html">fruits</a></li>
+                <li><a href="snacks.html">Snacks</a></li>
+                <li><a href="Drinks.html">cold drinks</a></li>
+                <li><a href="cosmetics.html">cosmetics</a></li>
+            </ul>
+
+        </div>
+        <div class="content1">
+            <h3>About our products</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam error ut id eligendi blanditiis, praesentium, repellat amet dolore natus temporibus deserunt quae recusandae minus quod dignissimos dolorem ipsum sed hic deleniti provident saepe aliquam. Impedit unde exercitationem enim nemo repellat hic iure dolorum, officiis, nesciunt doloribus illum voluptatibus similique a ratione reiciendis quod, distinctio doloremque.</p></div>
+        <div class="content2"><img src="fruit1.jpeg" alt="" height="297" width="400" id="img"></div>
+        <div class="content3"><img src="fruits2.jpg" alt="" height="297" width="400" id="img"></div>
+        <div class="footer">
+            <marquee behavior="" direction="">
+                <h4>For More information and Flash delivery contact us on <img src="wp.png" alt="" height="15px" width="15px">: 95641237</h4>
+            </marquee>
+        </div>
+    </div>
+</body>
+
+</html>
